@@ -4,7 +4,7 @@ import time
 
 def lineTracing():
     current_dis = 100
-    standard_dis = 25
+    standard_dis = 30
     start_time = 0
 
     while True:
@@ -14,31 +14,31 @@ def lineTracing():
 
         # find obstacle
         if current_dis <= standard_dis:
-            # go_forward_diff(0, 0)
-            # sleep(0.5)
-            # go_forward_diff(90, 0)
-            # sleep(0.5)
-            # go_forward_diff(45, 45)
-            # sleep(0.7)
-            # go_forward_diff(15, 50)
-            # sleep(0.5)
+            go_forward_diff(10, 10)
+            sleep(0.8)
+            go_forward_diff(90, 0)
+            sleep(0.5)
+            go_forward_diff(45, 45)
+            sleep(0.8)
+            go_forward_diff(15, 50)
+            sleep(0.5)
 
             # =====================================
             # Code: SwingTurn(Right) => 직진 => SwingTurn(Left)
-            go_forward_diff(90, 0)
-            sleep(0.5)
-            go_forward_diff(0, 0)
-            sleep(0.5)
-            go_forward_diff(45, 45)
-            sleep(1)
-            go_forward_diff(0, 0)
-            sleep(0.5)
-            go_forward_diff(0, 90)
-            sleep(0.5)
-            go_forward_diff(0, 0)
-            sleep(0.5)
-            go_forward_diff(45, 45)
-            sleep(1)
+            # go_forward_diff(90, 0)
+            # sleep(0.5)
+            # go_forward_diff(0, 0)
+            # sleep(0.5)
+            # go_forward_diff(45, 45)
+            # sleep(1)
+            # go_forward_diff(0, 0)
+            # sleep(0.5)
+            # go_forward_diff(0, 90)
+            # sleep(0.5)
+            # go_forward_diff(0, 0)
+            # sleep(0.5)
+            # go_forward_diff(45, 45)
+            # sleep(1)
             # =====================================
 
             while get_DBACE()[2] == 1:
