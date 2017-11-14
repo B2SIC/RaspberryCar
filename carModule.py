@@ -100,6 +100,14 @@ def go_forward_diff(left_speed, right_speed):  # You can use this for curve turn
     LeftPwm.ChangeDutyCycle(left_speed)
     RightPwm.ChangeDutyCycle(right_speed)
 
+def back_forward_diff(left_speed, right_speed):  # You can use this for curve turn.
+    leftmotor(False)
+    GPIO.output(MotorLeft_PWM, GPIO.HIGH)
+    rightmotor(False)
+    GPIO.output(MotorRight_PWM, GPIO.HIGH)
+    LeftPwm.ChangeDutyCycle(left_speed)
+    RightPwm.ChangeDutyCycle(right_speed)
+
 
 def go_forward_any(speed):
     leftmotor(True)
