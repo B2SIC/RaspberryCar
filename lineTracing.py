@@ -16,17 +16,20 @@ def lineTracing():
         if current_dis <= standard_dis:
             go_forward_diff(0, 0)
             sleep(0.5)
-            go_forward_diff(90, 0)
+            go_forward_diff(90, 5)
             sleep(0.5)
+
             go_forward_diff(0, 0)
             sleep(0.5)
-            go_forward_diff(55, 55)
+            go_forward_diff(60, 60)
             sleep(1)
+
             go_forward_diff(0, 0)
             sleep(0.5)
-            go_forward_diff(0, 90)
+            go_forward_diff(5, 90)
             sleep(1)
-            go_forward_diff(45, 45)
+
+            go_forward_diff(60, 60)
             sleep(0.5)
 
             # =====================================
