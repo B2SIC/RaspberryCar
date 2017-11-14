@@ -32,21 +32,20 @@ def lineTracing():
             sleep(0.3)
 
             # =====================================
-            # Code: SwingTurn(Right) => 직진 => SwingTurn(Left)
-            # go_forward_diff(90, 0)
-            # sleep(0.5)
-            # go_forward_diff(0, 0)
-            # sleep(0.5)
-            # go_forward_diff(45, 45)
-            # sleep(1)
-            # go_forward_diff(0, 0)
-            # sleep(0.5)
-            # go_forward_diff(0, 90)
-            # sleep(0.5)
-            # go_forward_diff(0, 0)
-            # sleep(0.5)
-            # go_forward_diff(45, 45)
-            # sleep(1)
+            # Code: PointTurn (위의 값들을 참고 했음)
+            # 멈춰
+            go_forward_diff(0, 0)
+            sleep(0.5)
+            # 약 45도 정도로 rightPointTurn
+            rightPointTurn(35, 0.5)
+            # 직진
+            go_forward_diff(60, 60)
+            sleep(0.8)
+            # 약 45도 보다 크게 leftPointTurn
+            leftPointTurn(35, 0.7)
+            # 직진
+            go_forward_diff(60, 60)
+            sleep(0.3)
             # =====================================
 
             while get_DBACE()[2] == 1:
