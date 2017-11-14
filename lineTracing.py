@@ -4,7 +4,7 @@ import time
 
 def lineTracing():
     current_dis = 100
-    standard_dis = 25
+    standard_dis = 30
     start_time = 0
 
     while True:
@@ -28,11 +28,11 @@ def lineTracing():
             go_forward_diff(90, 0)
             sleep(0.5)
             go_forward_diff(45, 45)
-            sleep(1)
+            sleep(0.5)
             go_forward_diff(0, 90)
             sleep(0.5)
             go_forward_diff(45, 45)
-            sleep(1)
+            sleep(0.5)
             go_forward_diff(0, 90)
             sleep(0.5)
             go_forward_diff(45, 45)
