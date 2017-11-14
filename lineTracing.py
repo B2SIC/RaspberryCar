@@ -17,9 +17,9 @@ def lineTracing():
             go_forward_diff(90, 0)
             sleep(0.5)
             go_forward_diff(45, 45)
-            sleep(1)
+            sleep(0.5)
             go_forward_diff(30, 60)
-            sleep(1)
+            sleep(0.5)
 
             # =====================================
             # Code: SwingTurn(Right) => 직진 => SwingTurn(Left)
