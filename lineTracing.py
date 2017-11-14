@@ -24,7 +24,7 @@ def lineTracing():
             sleep(1)
             go_forward_diff(0, 0)
             sleep(0.5)
-            go_forward_diff(0, 90)
+            go_forward_diff(0, 70)
             sleep(0.5)
             go_forward_diff(0, 50)
             sleep(0.5)
