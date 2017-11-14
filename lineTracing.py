@@ -22,11 +22,11 @@ def lineTracing():
             go_forward_diff(0, 0)
             sleep(0.5)
             go_forward_diff(60, 60)
-            sleep(1.3)
+            sleep(0.8)
 
             go_forward_diff(0, 0)
             sleep(0.5)
-            go_forward_diff(5, 60)
+            go_forward_diff(5, 80)
             sleep(0.5)
 
             go_forward_diff(60, 60)
