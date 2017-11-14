@@ -14,15 +14,17 @@ def lineTracing():
 
         # find obstacle
         if current_dis <= standard_dis:
-            go_forward_diff(93, 0)
-            sleep(0.6)
+            go_forward_diff(0, 0)
+            sleep(0.5)
+            go_forward_diff(90, 0)
+            sleep(0.5)
             go_forward_diff(0, 0)
             sleep(0.5)
             go_forward_diff(45, 45)
             sleep(1)
             go_forward_diff(0, 0)
             sleep(0.5)
-            go_forward_diff(20, 70)
+            go_forward_diff(40, 90)
             sleep(0.5)
 
             # =====================================
