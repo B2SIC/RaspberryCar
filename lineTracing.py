@@ -4,7 +4,7 @@ import time
 
 def lineTracing():
     current_dis = 100
-    standard_dis = 27
+    standard_dis = 25
     start_time = 0
 
     while True:
@@ -27,8 +27,12 @@ def lineTracing():
             # Code: SwingTurn(Right) => 직진 => SwingTurn(Left)
             go_forward_diff(90, 0)
             sleep(0.5)
-            go_forward_diff(50, 50)
-            sleep(0.7)
+            go_forward_diff(45, 45)
+            sleep(1)
+            go_forward_diff(0, 90)
+            sleep(0.5)
+            go_forward_diff(45, 45)
+            sleep(1)
             go_forward_diff(0, 90)
             sleep(0.5)
             go_forward_diff(45, 45)
