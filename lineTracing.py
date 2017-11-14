@@ -39,8 +39,6 @@ def lineTracing():
             sleep(0.5)
             go_forward_diff(45, 45)
             sleep(1)
-            go_forward_diff(0, 0)
-            sleep(1)
             # =====================================
 
             while get_DBACE()[2] == 1:
