@@ -173,42 +173,6 @@ def leftPointTurn(speed, running_time):
     RightPwm.ChangeDutyCycle(speed)
     sleep(running_time)
 
-# =============================
-# get ultraModule.py
-# =============================
-
-def getDistance():
-    GPIO.output(trig,False)
-    sleep(0.5)
-    GPIO.output(trig,True)
-    sleep(0.00001)
-    GPIO.output(trig,False)
-    while GPIO.input(echo) == 0:
-        pulse_start= time()
-    while GPIO.input(echo) == 1:
-        pulse_end = time()
-    pulse_duration = pulse_end - pulse_start
-    distance = pulse_duration*17000
-    distance = round(distance,2)
-    return distance
-
-def getDistance1():
-    GPIO.output(trig, False)
-
-def getDistance2():
-    GPIO.output(trig, True)
-    sleep(0.00001)
-    GPIO.output(trig, False)
-
-    while GPIO.input(echo) == 0:
-        pulse_start = time()
-    while GPIO.input(echo) == 1:
-        pulse_end = time()
-    pulse_duration = pulse_end - pulse_start
-    distance = pulse_duration * 17000
-    distance = round(distance, 2)
-    return distance
-
 
 def get_DBACE():
     return [GPIO.input(OTD),
