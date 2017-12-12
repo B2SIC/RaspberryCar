@@ -21,7 +21,7 @@ def findMaze():
             go_forward_diff(0, 0)
             sleep(0.3)
 
-            rightPointTurn(50, 0.1)
+            rightPointTurn(47, 0.1)
             get_line()
 
             go_forward_diff(0, 0)
@@ -55,7 +55,7 @@ def findMaze():
             go_forward_diff(0, 0)
             sleep(0.3)
 
-            leftPointTurn(50, 0.1)
+            leftPointTurn(47, 0.1)
             get_line()
 
             go_forward_diff(0, 0)
